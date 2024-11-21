@@ -1,0 +1,35 @@
+/* header.css */
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(30, 30, 30, 0.9);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #c87fbd;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+header nav ul li a {
+    color: #d580ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s, border 0.3s;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    border: 2px solid #d580ff;
+}
