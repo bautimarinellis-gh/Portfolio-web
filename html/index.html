@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Bautista Marinelli Scaglia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+    <!-- Fondo de redes neuronales (Canvas) -->
+    <canvas id="neuralCanvas"></canvas>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Introducción con Efecto de Máquina de Escribir -->
+    <section id="intro" class="section intro-section">
+        <h1 id="typewriter">Hi! I'm Bautista Marinelli Scaglia</h1>
+        <p>A software developer from Argentina.</p>
+
+        <a href="#about" class="scroll-down">
+            <span>&#8595;</span>
+        </a>
+    </section>
+
+    <!-- Sección About Me -->
+    <section id="about" class="section about-section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p>
+                Hi! I'm Bautista, a 20-year-old Systems Engineering student from Rosario, Santa Fe, Argentina. I'm currently
+                in my third year at UAI, where I'm developing my skills in software development and technology. Passionate
+                about coding, problem-solving, and creating impactful digital experiences, I'm always eager to learn and
+                take on new challenges. When I'm not coding, you'll find me exploring new technologies or diving into
+                personal projects to expand my knowledge. Nice to meet you!
+            </p>
+        </div>
+
+        <!-- Sección de habilidades -->
+        <h3>Skills</h3>
+        <div class="skills-container">
+            <div class="skill-card">C#</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+
+            <div class="skill-card">Python</div>
+        </div>
+    </section>
+
+
+
+    <section class="contact-section" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/neuralNetwork.js"></script>
+</body>
+</html>
